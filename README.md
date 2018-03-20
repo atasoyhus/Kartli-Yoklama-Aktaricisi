@@ -1,5 +1,5 @@
 # Kartlı Yoklama Aktarıcısı
-[Kartlı yoklama cihazı](http://huseyinatasoy.com/Kartli-Yoklama-Cihazi) ile alınan yoklamaların, öğrenci otomasyonuna (ismi lazım değil) aktarılmasına olanak sağlayan basit bir Chrome eklentisi.
+[Kartlı yoklama cihazı](http://huseyinatasoy.com/Kartli-Yoklama-Cihazi) ile alınan yoklamaların, öğrenci otomasyonuna aktarılmasına olanak sağlayan basit bir Chrome eklentisi.
 
 <img src="Kartli_Yoklama_Aktaricisi.png" alt="Yoklama aktarıcısı ekran görüntüsü" width="600px">
 
