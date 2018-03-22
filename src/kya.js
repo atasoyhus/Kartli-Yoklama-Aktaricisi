@@ -1,6 +1,6 @@
 ﻿/*
  *******   Kartlı Yoklama Aktarıcısı   *******
- * Kartlı yoklama cihazı ile elde elde edilen
+ * Kartlı yoklama cihazı ile elde edilen
  * yoklama dosyalarının öğrenci otomasyonuna
  * birkaç tıklama ile aktarılabilmesini sağlar.
  *
@@ -84,7 +84,7 @@ function imzaSayisi()
     if(imzaS>0)
     {
       var icerik='<h2>Tümüne uygula:</h2> <input data-i="0" type="file" class="dosya" name="dosya"><hr>';
-      for(var i=0;i<imzaS;i++) icerik+='<h2>'+(i+1)+'. ders:</h2> <input data-i="'+(i+1)+'" type="file" class="dosya">';
+      for(var i=1;i<=imzaS;i++) icerik+='<h2>'+i+'. ders:</h2> <input data-i="'+i+'" type="file" class="dosya">';
       var d=document.getElementById('dosyalar');
       d.innerHTML=icerik;
       var inputlar=d.getElementsByTagName('input');
@@ -122,6 +122,6 @@ document.addEventListener('DOMContentLoaded', function()
     }
     bilgi('Hazırlanıyor...');
     imzaSayisi();
-    //test: isaretle("Array('161123073','172523003')");
+    //test: isaretle("Array('100000000','100000001')");
   });
 });
