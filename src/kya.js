@@ -77,7 +77,7 @@ var imzaS=0;
 function imzaSayisi()
 {
   var jsKod="function cbisaretle(dizi,sutunNo){ for(var i=1;i<trler.length;i++) { var isaretlenecek=(dizi.indexOf(trler[i].getElementsByTagName('td')[1].innerText.trim())>-1); var inputlar=trler[i].getElementsByTagName('input'); var k=0; for(var j=0;j<inputlar.length;j++) { if(inputlar[j].type=='checkbox') k++; if(k==sutunNo) { if(isaretlenecek) inputlar[j].checked=true; else inputlar[j].checked=false; } } } }";
-  jsKod+="var tablo=null; try{tablo=document.getElementById('bailwal_overlay_frame').contentWindow.document.getElementById('bailwal_overlay_frame').contentWindow.document.getElementById('grd');}catch(e){}";
+  jsKod+="var tablo=null; try{tablo=document.getElementById('IFRAME1').contentWindow.document.getElementById('bailwal_overlay_frame').contentWindow.document.getElementById('grd');}catch(e){}";
   jsKod+="if(tablo!=null) { var trler=tablo.getElementsByTagName('tr'); var inputlar=trler[1].getElementsByTagName('input'); var j=0; for(var i=0;i<inputlar.length;i++) if(inputlar[i].type=='checkbox') j++; j }";
   chrome.tabs.executeScript({ code: jsKod }, function(snc) {
     imzaS=parseInt(snc);
